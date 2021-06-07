@@ -1,0 +1,2383 @@
+$titleFont: 'Bebas Neue'
+$textFont: 'Qanelas'
+
+
+
+h1, h2
+    font-family: $titleFont
+
+
+p, a, li, button, label, input, button, span, div
+    font-family: $textFont
+
+
+
+img 
+    max-width: 100%
+
+
+input:focus
+    outline: none
+
+
+.main-header
+    position: absolute
+    top: 0
+    z-index: 100
+    width: 100%
+    margin-top: 20px
+    & .main-nav__hamburger
+        display: none
+    @media screen and ( max-width: 1600px  )
+        & .main-nav__menu
+            margin-left: 0px
+    @media screen and ( max-width: 1279px  )
+      & .main-nav__menu
+        display: none
+      & .main-nav__hamburger
+        display: block
+        margin-left: 30px
+    @media screen and ( max-width: 767px  )
+        & .btn-primary
+            display: none
+        & .phone-link
+            display: none
+        & .main-nav__hamburger
+            margin-left: 15px
+
+
+
+.main-nav__menu
+    margin-left: 100px
+   
+
+.line
+    width: 18px
+    height: 2px
+    background: #fff
+    border-radius: 5px
+    margin-bottom: 4px
+    &:last-child
+        margin-bottom: 0px
+        
+
+.main-nav 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+
+
+.menu-list
+    display: flex
+    list-style: none
+    justify-content: space-between
+    padding: 0
+    margin: 0
+    &__li
+        margin-right: 60px
+        @media screen and ( max-width: 1400px  )
+            margin-right: 30px
+        &:last-child
+            margin-right: 0px
+        & a
+            color: #fff
+            text-decoration: none
+            font-size: 16px
+           
+
+.main-nav__contacts
+    display: flex
+    align-items: center
+    & .phone-link
+        color: #fff
+        font-size: 16px
+        text-decoration: underline
+        text-underline-position: under
+        margin-right: 30px
+        & a 
+            color: #fff
+
+
+.btn-primary
+    background: #02327B
+    border-radius: 4px
+    color: #fff
+    font-size: 16px
+    padding: 15px 30px
+    outline: none
+    border: none
+
+
+.main-page-slider__wrapper
+  width: 100%
+  height: 100vh
+
+
+.slick-track
+    height: 100%
+
+.slick-list 
+    height: 100%
+
+
+.slick-slide img
+    height: 100%
+    object-fit: cover
+    width: 100%
+
+
+
+
+
+
+
+.main-page-slider .slick-next 
+    z-index: 10
+    width: 50px
+    height: 50px
+    background: #fff
+    box-shadow: 0px 30px 30px rgb(0 0 0 / 6%)
+    border-radius: 25px
+    right: 50px
+    @media screen and ( max-width: 1279px )
+        display: none !important
+        
+
+.main-page-slider .slick-prev 
+    z-index: 10
+    width: 50px
+    height: 50px
+    background: #fff
+    box-shadow: 0px 30px 30px rgb(0 0 0 / 6%)
+    border-radius: 25px
+    left: 50px
+    @media screen and ( max-width: 1279px )
+        display: none !important
+
+
+
+
+
+.slick-prev:hover, .slick-next:hover
+    background: #02327B !important
+    transition: 0.2s
+    & svg rect
+        fill: #fff
+    & svg path
+        fill: #fff
+
+
+ 
+
+.slick-next:before 
+    display: none
+
+.slick-prev:before 
+    display: none
+
+.slider-mask-gradient
+    z-index: 10
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    background: linear-gradient(0.99deg, #212121 2.75%, rgba(0, 0, 0, 0) 42.68%)
+
+
+.slider-mask
+    z-index: 10
+    width: 100%
+    height: 100%
+    position: absolute
+    background-color: rgba(0, 0, 0, 0.6)
+    top: 0
+
+
+
+
+
+
+
+.main-page-slider 
+    position: relative
+    margin-bottom: 150px
+    @media screen and ( max-width: 1279px  )
+      margin-bottom: 100px
+    @media screen and ( max-width: 767px  )
+        margin-bottom: 70px
+    .slide-title
+        font-size: 72px
+        line-height: 150%
+        margin-bottom: 20px
+        color: #fff
+        @media screen and ( max-width: 1280px  )
+            font-size: 60px
+        @media screen and ( max-width: 1279px  )
+            font-size: 48px
+        @media screen and ( max-width: 767px  )
+            font-size: 32px
+            margin-bottom: 15px
+            
+
+
+.main-page-slider__slide
+    max-height: 100%
+    & .slide-text
+        z-index: 100
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 100%
+        padding-left: 270px
+        max-width: 1170px
+        @media screen and ( max-width: 1600px )
+            
+        @media screen and ( max-width: 1440px )
+          padding-left: 170px
+        @media screen and ( max-width: 1279px )
+            padding-left: 40px
+            max-width: 100%
+            padding-right: 40px  
+        @media screen and ( max-width: 767px )
+            padding-right: 15px
+            padding-left: 15px  
+        & .slide-subtitle
+            font-size: 20px
+            color: #fff
+            max-width: 486px
+            line-height: 170%
+            @media screen and ( max-width: 767px )
+                font-size: 16px
+                
+
+
+
+.progress-bar-time
+    z-index: 10
+    position: absolute
+    top: 85%
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+    max-width: 340px
+    @media screen and ( max-width:1440px  )
+        top: 90%
+    & .line-full 
+        position: absolute
+        top: 13px
+        max-width: 340px
+        transition: 0.5s linear
+
+.progressBar .inProgress 
+  background-color: rgba(255, 255, 255, 1)
+  width: 0%
+  height: 1.5px
+  border-radius: 2px
+
+
+
+.tools
+    margin-bottom: 150px
+    
+.tools .col-lg-4
+    @media screen and ( max-width:1279px  )
+      margin-bottom: 20px
+    @media screen and ( max-width:767px  )
+      margin-bottom: 10px
+
+
+.tools-card 
+    background: #FFFFFF
+    box-shadow: 0px 28px 46px rgba(0, 0, 0, 0.04)
+    border-radius: 4px
+    padding: 30px
+    display: flex
+    flex-direction: column
+    position: relative
+    height: 100%
+    @media screen and ( max-width:767px  )
+        padding: 16px       
+    &:hover
+        cursor: pointer
+        .tools-card__title
+            color: #02327B
+    &__title
+      font-weight: 500
+      font-size: 28px
+      line-height: 160%
+      margin-bottom: 20px
+      @media screen and ( max-width:1279px  )
+          font-size: 24px
+          margin-bottom: 15px
+      @media screen and ( max-width:767px  )
+          font-size: 18px
+          margin-bottom: 10px
+    &__p
+        font-size: 16px
+        line-height: 25px
+        @media screen and ( max-width:1279px  )
+          font-size: 16px
+        @media screen and ( max-width:767px  )
+          font-size: 14px
+    &__img img 
+        max-height: 300px
+    & .stretch-link 
+        padding: 30px
+
+
+.stretch-link 
+    width: 100%
+    height: 100%
+    top: 0
+    position: absolute
+    left: 0
+
+
+
+.tools__title 
+    font-size: 64px
+    line-height: 150%
+    margin-bottom: 10px
+    text-align: center
+    color: #141414
+    @media screen and ( max-width: 1279px )
+        font-size: 46px
+        margin-bottom: 20px
+    @media screen and ( max-width: 767px )
+        margin-bottom: 15px
+        font-size: 28px
+        
+
+.tools__subtitle
+    font-size: 18px
+    line-height: 160%
+    text-align: center
+    color: #141414
+    max-width: 902px
+    margin: 0 auto
+    @media screen and ( max-width: 1279px )
+        text-align: center
+    @media screen and ( max-width: 767px )
+        font-size: 16px
+
+
+.tools__title-container
+    margin-bottom: 70px
+    @media screen and ( max-width: 1279px )
+        margin-bottom: 50px
+        text-align: center
+    @media screen and ( max-width: 767px )
+        margin-bottom: 30px
+
+
+.tools-card__img
+    text-align: center
+    flex-grow: 1
+    display: flex
+    align-items: center
+    justify-content: center
+
+.our-tools
+    &__title
+      text-align: center
+      font-size: 64px
+      line-height: 150%
+      margin-bottom: 70px
+      @media screen and ( max-width: 1279px )
+        margin-bottom: 50px
+        text-align: center
+      @media screen and ( max-width: 767px )
+        margin-bottom: 30px
+
+
+.big-tools-card
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04)
+    border-radius: 10px
+    padding-top: 50px
+    padding-bottom: 30px
+    padding-left: 110px
+    padding-right: 30px
+    position: relative
+    height: 100%
+    margin-bottom: 20px
+    display: flex
+    flex-direction: column
+    &:hover .big-tools-card__title
+        transition: 0.2s
+        color: #02327B
+    @media screen and ( max-width: 1279px )
+        padding: 30px
+        margin-bottom: 20px
+    @media screen and ( max-width: 767px )
+        margin-bottom: 10px
+        padding-left: 15px
+        padding-right: 15px
+    &__text
+        margin-bottom: 50px
+        max-width: 496px
+        @media screen and ( max-width:1279px  )
+            margin-bottom: 30px
+        @media screen and ( max-width:1279px  )
+            margin-bottom: 20px
+    &__title
+        font-size: 32px
+        line-height: 160%
+        margin-bottom: 15px
+        text-transform: uppercase
+        font-weight: 500
+        @media screen and ( max-width:1279px  )
+          font-size: 24px
+          margin-bottom: 15px
+          font-weight: 600
+        @media screen and ( max-width:767px  )
+          font-size: 18px
+          margin-bottom: 10px
+    &__p
+        font-size: 16px
+        line-height: 160%
+        @media screen and ( max-width:1279px  )
+          font-size: 16px
+        @media screen and ( max-width:767px  )
+          font-size: 14px
+    &__img
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        flex-grow: 1
+        align-items: center
+
+
+.our-tools .container-fluid
+    @media screen and ( max-width: 1279px)
+        max-width: 720px
+        
+
+.our-tools .col-lg-6
+    margin-bottom: 20px
+    padding-right: 10px
+    padding-left: 10px
+
+
+.main-page-catalog__content
+    margin-left: 150px
+
+
+.main-page-catalog
+    background-image: url('../assets/images/main-catalog-bg.svg')
+    background-repeat: no-repeat
+    background-position-x: right
+    background-position-y: top
+    background-size: contain
+    min-height: 1400px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    @media screen and ( max-width: 1600px )
+        background-size: 50%
+    @media screen and ( max-width: 1440px )
+        background-size: 40%
+        background-position-y: center
+        min-height: 1000px  
+    @media screen and ( max-width: 1279px )
+        min-height: unset
+        background: none
+        margin-top: 80px
+    @media screen and ( max-width: 767px )
+        margin-top: 50px
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content:  center
+        @media screen and ( max-width: 1600px )
+          margin-left: 100px
+        @media screen and ( max-width: 1279px )
+            padding-left: 30px
+            padding-right: 30px
+            margin-left: 0px
+            order: 1
+            text-align: center
+            margin-top: 70px
+            align-items: center
+        @media screen and ( max-width: 767px )
+            margin-top: 62px
+    &__title
+        font-size: 64px
+        margin-bottom: 50px
+        line-height: 150%
+        max-width: 650px
+        @media screen and ( max-width: 767px )
+            margin-bottom: 15px
+    &__text
+        font-size: 18px
+        margin-bottom: 30px
+        line-height: 160%
+        @media screen and ( max-width: 1279px )
+        font-size: 16px
+    & .btn-primary
+        max-width: 226px
+    & .mobile-catalog-img
+        display: none
+        @media screen and ( max-width: 1279px )
+            display: inline
+            width: 100%
+    & .desctop-catalog-img
+        @media screen and ( max-width: 1279px )
+            display: none
+        
+
+
+.certificates
+    margin-top: 70px
+    margin-bottom: 150px
+    &__title 
+        @extend .our-tools__title
+    &__item
+        @media screen and ( max-width: 1279px )
+            margin-right: 20px
+            margin-left: 20px
+        @media screen and ( max-width: 1279px )
+            margin-left: 16px
+            margin-right: 16px
+        & img
+          text-align: center
+          box-shadow: 0px 9.34571px 28.0371px rgba(0, 0, 0, 0.04)
+          border-radius: 4px
+          &:hover
+              box-shadow: 0px 9.34571px 28.0371px rgba(0, 0, 0, 0.1)
+              transition: 0.2s
+
+
+.features
+   background-color: #2E2E2E
+   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04)
+   border-radius: 4px
+   padding-top: 75px
+   padding-bottom: 75px
+   padding-left: 138px
+   padding-right: 138px
+   margin-bottom: 150px
+   @media screen and ( max-width:1440px  )
+       padding-left: 0px
+       padding-right: 0px
+   @media screen and ( max-width:1279px  )
+       padding-top: 40px
+       margin-left: 16px
+       margin-right: 16px
+       margin-bottom: 70px   
+   &-row
+       display: flex
+       justify-content: space-between
+       align-items: center
+       @media screen and ( max-width:1279px  )   
+         flex-wrap: wrap
+   &__item
+       color: #fff
+       text-align: center
+       @media screen and ( max-width:1279px  )  
+          flex: 0 0 49%
+          max-width: 49%
+          min-width: 49%
+          margin-bottom: 30px
+       @media screen and ( max-width:767px  )  
+          flex: 0 0 100%
+          max-width: 100%
+          min-width: 100%
+          margin-bottom: 20px
+          padding-bottom: 30px
+          border-bottom: 1px solid #545454
+   &-item__title
+       font-size: 56px
+       line-height: 150%
+       margin-bottom: 5px
+       @media screen and ( max-width:767px  )  
+           font-size: 48px
+   &-item__text
+       font-size: 18px
+       line-height: 200%
+       @media screen and ( max-width:767px  )  
+           font-size: 16px
+   &__separator
+       height: 45px
+       width: 1px
+       background-color: #fff
+       opacity: 0.18
+       @media screen and ( max-width:1279px  )  
+           display: none
+
+
+.partners
+    margin-bottom: 60px
+    @media screen and ( max-width:767px  )  
+        margin-bottom: 35px
+    &__text
+        margin-bottom: 100px
+    &__title
+        @extend  .tools__title
+    &__subtitle
+        @extend  .tools__subtitle
+    &__logo-row
+        display: flex
+        justify-content: space-between
+        & .partners__logo
+            margin-right: 150px
+            margin-bottom: 92px
+            @media screen and ( max-width:1279px  ) 
+                margin-right: 50px
+                margin-bottom: 36px 
+            @media screen and ( max-width:767px  ) 
+                margin-right: 20px
+        & .partners__logo:last-child
+            margin-right: 0px
+
+
+
+    
+.letters
+    margin-bottom: 150px
+    &__title
+        @extend .certificates__title
+    &__item
+        @extend  .certificates__item
+
+
+.callback-sect 
+    background-color: #262626
+    background-image: url('../assets/images/white-gear.svg')
+    background-repeat: no-repeat
+    background-position-x: center
+    background-position-y: -80%
+    padding-top: 96px
+    padding-bottom: 140px
+    @media screen and ( max-width:767px  )  
+        padding-top: 50px
+        padding-bottom: 50px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+
+
+.callback-sect__title 
+    text-transform: none
+    font-size: 64px
+    line-height: 150%
+    color: #F6F6F6
+    text-align: left
+    margin-bottom: 20px
+    @media screen and ( max-width:767px  )  
+        text-align: center
+        margin-bottom: 15px
+
+
+
+.contacts 
+    margin-right: 50px
+    padding-top: 10px
+    @media screen and ( max-width:767px  )  
+        margin-right: 0px
+
+
+
+.contact-label 
+    color: #F6F6F6
+    line-height: 30px
+    font-size: 20px
+    font-weight: 300
+    margin-bottom: 10px
+    @media screen and ( max-width:767px  )  
+        font-size: 14px
+        opacity: 0.5
+
+
+
+.contact-adress 
+    font-size: 24px
+    line-height: 180%
+    color: #F6F6F6
+    margin-bottom: 110px
+    @media screen and ( max-width:767px  )  
+        margin-bottom: 30px
+        font-size: 18px
+
+
+.contact-tel 
+    font-size: 24px
+    line-height: 180%
+    color: #F6F6F6
+    margin-bottom: 43px
+    &:hover
+        color: #F6F6F6
+    @media screen and ( max-width:767px  )  
+        margin-bottom: 30px
+        font-size: 18px
+
+
+
+
+.callback-form-container 
+    background: #fff
+    box-shadow: 0px 15px 40px rgb(0 0 0 / 4%)
+    border-radius: 10px
+    padding: 50px
+    margin-top: 90px
+    @media screen and ( max-width: 1279px )
+        padding: 30px
+    @media screen and ( max-width:767px  )  
+        margin-top: 50px
+        padding: 20px
+        
+
+.callback-form
+    @media screen and ( max-width:767px  )  
+        text-align: left
+    & .modal-form__input
+        font-size: 16px
+        @media screen and ( max-width:767px  )  
+            margin-top: 0px
+            margin-bottom: 10px
+
+.rounds__row-with-inputs 
+    margin-left: -10px
+    margin-right: -10px
+
+
+
+label 
+    margin-bottom: 10px
+    font-size: 16px
+    line-height: 19px
+    color: #1b1b1b
+
+
+.modal-form__input 
+    width: 100%
+    display: block
+    padding-left: 20px
+    padding-top: 12px
+    padding-bottom: 12px
+    background: #F8F8F8
+    font-size: 18px
+    color: #212529
+    margin-bottom: 20px
+    border: none
+    -webkit-border-radius: 6px
+
+
+
+.submit-input 
+    background: #02327B
+    color: #fff
+    margin-top: 30px
+
+.callback-sect__subtitle
+    color: #fff
+    font-size: 20px
+    @media screen and ( max-width:767px  )  
+        font-size: 16px
+        margin-bottom: 50px
+
+
+.main-footer
+    padding-top: 38px
+    @media screen and ( max-width: 1279px )
+        & .main-nav__menu
+            display: none
+    @media screen and ( max-width: 767px )
+        padding-top: 30px
+        & .phone-link
+            display: none
+        & .main-nav__logo
+            display: none
+        & .main-nav__contacts
+            width: 100%
+        & .btn-primary
+            width: 100%
+        
+
+.footer-main-nav
+    border-bottom: 1px solid #F1F1F1
+    padding-bottom: 30px
+    margin-bottom: 30px
+    @media screen and ( max-width:1279px  )
+    margin-bottom: 16px
+    @media screen and ( max-width:767px  )
+        border-bottom: none
+        margin-bottom: 0
+        
+    & .logo__svg path
+      fill: #262626
+    & .menu-list__li a
+        color: #000000
+        font-weight: 500
+    & .phone-link a
+        color: #000
+
+
+.footer-second-row
+    display: flex
+    justify-content: space-between
+    @media screen and ( max-width:767px  )
+      display: block
+        
+
+.author-n-copyright
+    margin-bottom: 20px
+    padding-bottom: 4px
+    @media screen and ( max-width:767px  )
+      border-bottom: 1px solid #F1F1F1
+
+
+
+
+.copyright
+    color: #262626
+    opacity: 0.7
+    margin-bottom: 15px
+    font-size: 14px
+    line-height: 180%
+
+
+.author
+    color: #262626
+    opacity: 0.7
+    font-size: 14px
+    line-height: 180%
+    & a 
+        text-decoration: underline
+        text-underline-position: under
+        color: #262626
+        opacity: 0.7
+
+
+.footer-contacts
+    display: flex
+    @media screen and ( max-width:767px  )
+        margin-bottom: 30px
+        
+    &__label
+        font-size: 14px
+        margin-bottom: 15px
+        color: #262626
+        opacity: 0.7
+    &__link
+        font-size: 14px
+        color: #262626
+        font-weight: 500
+        text-underline-position: under
+
+
+
+.footer-contacts__item
+    margin-right: 50px
+    @media screen and ( max-width:767px  )
+        text-align: center
+    &:last-child
+        margin-right: 0px
+
+.main-footer .footer-contacts__item
+    @media screen and ( max-width:767px  )
+        text-align: left
+
+
+.border-anim:after 
+    display: block
+    content: ''
+    border: none
+    border-bottom: solid 1px #000
+    transform: scaleX(0)
+    transition: transform 250ms ease-in-out
+    transform-origin: 0% 50%
+    color: #000
+    text-decoration: none
+
+.border-anim:hover:after 
+    transform: scaleX(1)
+
+
+.border-anim-white:after
+    display: block
+    content: ''
+    border: none
+    border-bottom: solid 1px #fff
+    transform: scaleX(0)
+    transition: transform 250ms ease-in-out
+    transform-origin: 0% 50%
+    color: #fff
+    text-decoration: none
+
+.border-anim-white:hover:after 
+    transform: scaleX(1)
+
+.modal-body
+    padding: 40px
+    @media screen and ( max-width:767px  )
+        padding: 20px
+        
+
+.modal-content
+    border-radius: 10px
+    position: relative
+
+.modal .close
+    position: absolute
+    top: -68px
+    right: -68px
+    background: none
+    height: 68px
+    width: 68px
+    display: flex
+    flex-grow: 0
+    justify-content: center
+    align-items: center
+    border: 1px solid #fff
+    border-radius: 68px
+    color: #fff
+    @media screen and ( max-width:767px  )
+        right: 0px
+        top: -50px
+        height: 40px
+        width: 40px
+
+
+.modal-dialog
+    margin-top: 70px
+
+.checkbox-label a 
+    color: #161616
+    opacity: 0.7
+    text-underline-position: under
+
+.modal
+    &-title
+        font-size: 48px
+        line-height: 150%
+        margin-bottom: 5px
+        @media screen and ( max-width:767px  )
+            font-size: 32px
+    &-subtitle
+        font-size: 16px
+        line-height: 160%
+        font-weight: 400
+        @media screen and ( max-width:767px  )
+            font-size: 14px
+    &__header
+        padding-bottom: 30px
+        margin-bottom: 30px
+        border-bottom: 1px solid #EEEDED
+        @media screen and ( max-width:767px  )
+            padding-bottom: 20px
+            margin-bottom: 20px
+
+
+#form-checkbox
+    display: none
+
+
+.checkbox-label
+    margin-left: 32px
+
+
+
+.checkmark 
+  position: absolute
+  top: 3px
+  left: 0
+  height: 20px
+  width: 20px
+  border-radius: 20px
+  background-color: #dedede
+
+
+.checkbox-container
+    position: relative
+
+
+/* On mouse-over, add a grey background color */
+
+
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark 
+  background-color: #02327B
+  background-image: url('../assets/images/check.svg')
+  background-repeat: no-repeat
+  background-position: center
+
+.checkbox-active 
+ background-color: #02327B
+ background-image: url('../assets/images/check.svg')
+ background-repeat: no-repeat
+ background-position: center
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-checkmark:after 
+  content: ""
+  position: absolute
+  display: none
+
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after 
+  display: block
+
+
+.hide
+    display: none
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after 
+  left: 9px
+  top: 5px
+  width: 5px
+  height: 10px
+  border: solid white
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+
+
+.mobile-menu 
+    background: #1c1c1c
+    position: absolute
+    top: 0
+    z-index: 98
+    width: 100%
+    padding-top: 100px
+    padding-bottom: 70px
+    transition: 1s
+    transform: translateY(-1500px)
+    min-height: 100vh
+    display: none
+    max-height: 100vh
+    overflow: scroll
+
+
+.btn-mobile-menu
+    width: 100%
+    margin-top: 30px
+    display: none
+    @media screen and ( max-width:767px  )
+        display: block
+
+
+.mobile-menu__ul
+    padding: 0
+    list-style: none
+    margin-bottom: 96px
+    @media screen and ( max-width:767px  )
+        margin-bottom: 30px
+
+
+.mobile-menu__ul li 
+    padding-bottom: 16px
+    border-bottom: 1px solid #fff
+    margin-bottom: 16px
+
+
+
+.mobile-menu__ul li a 
+    font-size: 18px
+    line-height: 27px
+    color: #fff
+    text-decoration: none
+    @media screen and ( max-width: 767px )
+        font-size: 16px
+
+
+
+
+.open-menu 
+    transition: 1s
+    transform: translateY(0) !important
+
+
+
+.mobile-menu__footer
+    display: flex
+    @media screen and ( max-width:767px  )
+        justify-content: center
+    & .footer-contacts__link
+        color: #fff
+        opacity: 1
+    & .footer-contacts__label
+        color: #fff
+        opacity: 1
+
+
+.phone-link__mobile
+    width: 40px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #5e6060
+    border-radius: 40px
+    display: none
+    @media screen and ( max-width: 767px )
+        display: flex
+        
+
+
+
+.hidden-slider-1, .hidden-slider-2
+    & .slick-prev 
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #fff
+        box-shadow: 0px 30px 30px rgb(0 0 0 / 6%)
+        border-radius: 25px
+        left: 50px
+        top: 120%
+        @media screen and ( max-width:767px  )
+        left: 16px
+        top: 125%
+    & .slick-next
+        z-index: 10
+        width: 50px
+        height: 50px
+        background: #fff
+        box-shadow: 0px 30px 30px rgb(0 0 0 / 6%)
+        border-radius: 25px
+        right: 50px 
+        top: 120%
+        @media screen and ( max-width:767px  )
+        right: 16px
+        top: 125%
+            
+
+
+
+.progress 
+    display: block
+    width: 100%
+    height: 2px
+    border-radius: 100px
+    overflow: hidden
+    background-color: #D9D9D9
+    background-image: linear-gradient(to right, #02327B, #02327B)
+    background-repeat: no-repeat
+    background-size: 0 100%
+    transition: background-size .4s ease-in-out
+
+
+.sr-only 
+    position: absolute
+    width: 1px
+    height: 1px
+    padding: 0
+    margin: -1px
+    overflow: hidden
+    clip: rect(0,0,0,0)
+    white-space: nowrap
+    border: 0
+
+.progress__container
+    width: 60%
+    margin: 0 auto
+    transform: translateY(70px)
+    display: none
+    @media screen and ( max-width:1279px  )
+        display: block
+    @media screen and ( max-width:1279px  )
+        width: 80%
+        transform: translateY(100px)
+    @media screen and ( max-width:768px  )
+        transform: translateY(75px)
+        width: 80%
+    @media screen and ( max-width:767px  )
+        transform: translateY(53px)
+        width: 60%
+
+        
+
+
+.firstline, .secondline, .thirdline
+    transition: 0.2s
+    transform: translate(0)
+
+
+.firstline-active 
+    transform: rotate(45deg) translateY(8px) 
+
+.secondline-active 
+    opacity: 0
+
+.thirdline-active 
+    transform: rotate(-45deg) translateY(-9px)
+
+.no-slider
+    @extend .main-page-slider
+    background-image: url('../assets/images/slide2.png')
+    background-size: cover
+    width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    & .slider-mask
+        z-index: 1
+         background: linear-gradient(172deg, rgba(0, 0, 0, 0.83) 2.71%, rgba(0, 0, 0, 0) 57.93%)
+    & .slider-mask-gradient
+        z-index: 2
+        background: linear-gradient(172.53deg, rgba(0, 0, 0, 0.83) 2.71%, rgba(0, 0, 0, 0) 57.93%)
+    & .slide-text
+        z-index: 10
+        position: relative
+    & .main-page__wrapper
+        width: 100%
+        height: 100%
+    & .slide-text 
+        max-width: 869px
+    & .slide-subtitle
+        color: #fff
+        max-width: 486px
+        margin-bottom: 40px
+
+
+
+.breadcrumbs 
+    margin-top: 30px
+    margin-bottom: 70px
+
+
+
+.breadcrumbs-ul 
+    display: flex
+    align-items: center
+    list-style: none
+    padding: 0px
+    margin: 0px
+    padding-left: 2px
+
+
+.breadcrumbs-li a 
+    font-size: 14px
+    color: #B8B6BF
+    text-decoration: none
+
+
+
+.breadcrumbs-li:first-child a 
+    color: #fff
+
+
+
+.breadcrumbs-li:after 
+    content: ""
+    width: 12px
+    height: 12px
+    background: #fff
+    display: inline-block
+    background: url(../assets/images/chevron-right.svg)
+    margin-left: 10px
+    margin-right: 10px
+    background-repeat: no-repeat
+    background-position: center
+    transform: translateY(2px)
+
+.breadcrumbs-li:last-child:after
+    display: none
+
+
+.about-company-sect
+    min-height: auto
+    background-size: 450px
+    background-position: 72% 90%
+    padding-bottom: 300px
+    background-repeat: no-repeat
+    background: none
+    overflow: hidden
+    @media screen and ( max-width: 1279px  )
+        background-position: 50% 100%
+        background-size:  600px
+        & .desctop-catalog-img
+            display: block   
+            width: 100%
+        & .mobile-catalog-img
+            display: none 
+        & .main-page-catalog__img 
+            margin-right: 0
+        & .main-page-catalog__content 
+            order: 0
+            margin-bottom: 50px
+            margin-top: 0px
+        & .main-page-catalog__title 
+            max-width: 100%
+    @media screen and ( max-width: 767px  )
+        background-size: 80%
+        background-position: 50% 100%
+        padding-bottom: 140px
+    & .main-page-catalog__img
+        margin-right: 85px
+        @media screen and ( max-width: 1279px  )
+            margin-right: 0px
+
+
+.about-company-sect
+    @media screen and ( max-width:1279px  )
+        .col-lg-5, .col-lg-4
+            width: 100%
+        
+
+.about-shop__mobile
+    display: block
+    position: relative
+    padding-left: 0px
+    padding-right: 0px
+
+
+.gear-rotate-container
+    background: url('../assets/images/about-company-gear.svg')
+    width: 450px
+    height: 450px
+    background-repeat: no-repeat
+    background-size: contain
+    position: absolute
+    bottom: -200px
+    left: -200px
+    z-index: -1
+    @media screen and ( max-width: 1279px )
+      width: 450px
+      height: 450px
+      bottom: -208px
+      left: 0
+      right: 0
+      margin: 0 auto
+    @media screen and ( max-width: 767px )
+      width: 320px
+      height: 320px
+      bottom: -138px
+      left: 0
+      right: 0
+      margin: 0 auto
+        
+
+.relative
+    position: relative
+
+.showmore-mask 
+    background: linear-gradient(0deg, #FFFFFF 20.99%, rgba(249, 249, 249, 0) 100%)
+    height: 50px
+    width: 100%
+    transform: translateY(-20px)
+    margin-bottom: 0px
+    height: 100%
+    position: absolute
+    transition: 0.8s
+    left: 0
+
+.showmore-unvisible-text
+    padding: 0px
+    border: none
+    margin-bottom: 30px
+
+.card-bonus .showmore-link-container 
+    margin-top: 15px
+    
+.disable 
+    transition: 0.8s
+    opacity: 0
+
+
+.showmore-btn
+    text-decoration: none
+    color: #02327B
+    font-weight: 500
+    & svg
+        margin-left: 10px
+        
+.center-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.rotate180 
+    transform: rotate(180deg)
+
+.mobile-menu
+    @media screen and ( max-width: 1279px )
+        display: block
+        
+
+.footer-row-mobile-menu
+    display: none
+    @media screen and ( max-width: 1279px )
+        display: block
+    & .mobile-menu__ul
+        margin-bottom: 10px
+    & .mobile-menu__ul li 
+        border-bottom: 1px solid #F1F1F1
+    & .mobile-menu__ul li a
+        color: #000
+
+
+.documents-item__header
+    display: flex
+
+.pdf-img
+    margin-right: 20px
+
+
+.pdf-title__item
+    font-size: 16px
+    margin-bottom: 10px
+
+.pdf-size
+    opacity: 0.5
+
+
+.documents__item
+    position: relative
+    display: flex
+    // justify-content: center
+    & .stretch-link
+        padding-left: 15px
+        padding-top: 40%
+        @media screen and ( max-width: 1023px)
+            padding: 0px
+            
+.row-catalog
+    @media screen and ( max-width: 1279px)
+        .col-lg-2, .col-lg-10
+            width: 100%
+
+
+.doc-row
+    margin-left: 100px
+    margin-right: 100px
+    @media screen and ( max-width: 1023px)
+        margin-left: 0px
+        margin-right: 0px
+
+
+.doc-row .border-doc
+    height: 1px 
+    width: 100%
+    margin-top: 15px
+    background-color: #E3E3E3
+    &:hover
+        & .border-doc-full
+            transition: 0.2s
+            width: 100%
+
+.border-doc-full
+    height: 1px
+    width: 0%
+    transition: 0.2s
+    background-color: #1B4688
+
+.doc-row .col-lg-2:hover .border-doc-full
+    width: 100%
+    transition: 0.2s
+
+
+.doc-row .col-lg-2
+    @media screen and ( max-width:1023px  )
+        margin-bottom: 20px
+        
+
+
+.filter-menu-card
+    margin-top: 80px
+    @media screen and ( max-width:1279px  )
+        margin-top: 0px
+        
+
+.border-anim-black:after
+    display: block
+    content: ""
+    border: none
+    border-bottom: solid 1px #000
+    transform: scaleX(0)
+    transition: transform 250ms ease-in-out
+    transform-origin: 0% 50%
+    color: #fff
+    text-decoration: none
+
+.border-anim-black:hover:after 
+    transform: scaleX(1)
+
+
+.inner-header
+    margin-top: 0px
+    padding-top: 15px
+    padding-bottom: 18px
+    box-shadow: 0px -9px 19px rgba(0, 0, 0, 0.15)
+    & .logo__svg path
+        fill: #000
+    & .menu-list__li a
+        color: #000
+    & .main-nav__contacts .phone-link a
+        color: #000
+    & .phone-link__mobile svg path
+        fill: #000
+    & .line
+        background-color: #000
+
+
+.inner-breadcrumbs
+    margin-top: 120px
+    & .breadcrumbs-li:first-child a
+        color: #000
+
+.inner-header .white-svg path
+    fill: #fff !important
+
+.hamburger-inner .white-svg
+    background: #fff
+
+
+.card 
+    background-color: #fff
+    border-radius: var(--card-radius)
+    position: relative
+    border: none
+
+
+.card-header 
+    background: none
+    color: #fff
+    padding: 0px
+    border: none
+
+
+.card .btn-link:focus
+    box-shadow: none
+
+
+.card-header .collapsed 
+    background: #fff
+    color: #1B1B1B
+
+
+.card .btn-link 
+    color: #000000
+    text-decoration: none
+    font-family: "Gilroy Regular"
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: left
+    width: 100%
+    padding: 0px
+    padding-bottom: 20px
+    padding-top: 20px
+    color: #1b1b1b
+    border-bottom: 1px solid rgba(36, 36, 36, 0.03)
+
+
+.card-header .collapsed svg 
+    transform: rotate(180deg)
+
+.accordion-lk .card-header .collapsed svg 
+    transform: rotate(360deg)
+
+.accordion-lk .card-header  svg 
+    transform: rotate(180deg)
+
+.aside-menu-card 
+    background: #FFFFFF
+    box-shadow: 0px 15px 40px rgb(0 0 0 / 4%)
+    border-radius: 10px
+    padding-bottom: 30px
+    padding-top: 30px
+    z-index: 10
+    padding-left: 30px
+    padding-right: 30px
+    border-radius: 4px
+    @media screen and ( max-width: 1279px )
+        margin-bottom: 40px
+        
+.card-body__list
+    list-style: none
+    padding: 0
+    margin: 0
+    & li
+        margin-bottom: 20px
+    & li a
+        color: #1B1B1B
+        opacity: 0.7
+        text-decoration: none
+        &:hover
+            opacity: 1
+            text-decoration: underline
+            text-underline-position: under
+
+.inner-footer
+    box-shadow: 0px -2px 9px rgba(0, 0, 0, 0.05)
+
+
+.catalog-cards
+    & .catalog-row .col-lg-6
+        margin-bottom: 20px
+    & .tools-card__text
+        padding-bottom: 30px
+        margin-bottom: 30px
+        border-bottom: 1px solid #EFEFEF
+
+.tools-card__footer
+    display: flex
+    align-items: center
+    & p
+        margin-bottom: 0px
+    & svg
+        margin-right: 15px
+
+.catalog-cargds__title p 
+    font-size: 32px
+    margin-bottom: 0
+    white-space: nowrap
+    @media screen and ( max-width:  767px)
+        font-size: 20px
+        white-space: wrap
+
+
+.catalog-cargds__title
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    @media screen and ( max-width:  767px)
+        margin-bottom: 20px
+    
+        
+
+
+.catalog-title-separate
+    height: 1px
+    width: 100%
+    margin-left: 30px
+    background: #EFEFEF
+    @media screen and ( max-width:  767px)
+        display: none
+
+.catalog-cards
+    margin-bottom: 70px
+
+
+.catalog-cargds__title-p:after
+    content: ''
+    display: block
+    background: #EFEFEF
+    width: 100%
+
+.card-body
+    padding-left: 0
+    padding-right: 0
+
+
+.banner-slider 
+    display: flex
+    flex-direction: column-reverse
+    height: 100%
+    justify-content: center
+
+
+
+.banner-slider .slider.slider-nav 
+    width: 100%
+    float: left
+    height: auto
+    overflow: hidden
+    padding: 20px 0 0
+    padding-top: 0px
+    @media screen and ( max-width:767px  )
+        background-color: #fff
+
+
+
+.banner-slider .slider.slider-for 
+    width: 100%
+    float: left
+    margin-bottom: 50px
+    background-color: #fff
+    border-radius: 4px
+    @media screen and ( max-width:767px  )
+        margin-bottom: 10px
+        
+
+
+
+.slider-for .slick-prev 
+    left: 30px
+    border-radius: 100px
+    width: 50px
+    height: 50px
+    box-shadow: 0px 15px 40px rgb(0 0 0 / 8%)
+    z-index: 5
+    background-color: #fff
+
+
+
+.slider-for .slick-list 
+    // border: 1px solid #F0F0F0
+
+
+
+.banner-slider .slick-initialized .slick-slide 
+    max-height: 590px
+
+.vehicle-detail-banner
+    padding-top: 50px
+    padding-right: 30px
+    height: 100%
+    @media screen and ( max-width: 767px)
+        padding-right: 0px
+        padding-top: 0px
+        
+
+.slider-banner-image img, .slider-nav .slick-slide.thumbnail-image .thumbImg img 
+    // height: 100%
+    // width: 100%
+    // object-fit: contain
+    max-width: 100%
+    margin: 0 auto
+    width: auto
+    @media screen and ( max-width: 767px)
+        object-fit: contain
+        
+
+
+
+.slider-banner-image img 
+    padding: 30px
+    @media screen and ( max-width: 767px)
+        padding: 10px
+        object-fit: contain
+        
+
+
+.slider-for .slick-next 
+    right: 30px
+    background: #fff
+    border-radius: 100px
+    box-shadow: 0px 15px 40px rgb(0 0 0 / 8%)
+    width: 50px
+    height: 50px
+
+
+
+.slider-nav .slick-slide.thumbnail-image .thumbImg 
+    /* max-width: 74px */
+    border: 1px solid #F2F2F2
+    border-radius: 4px
+    margin-right: 15px
+    height: 74px
+    margin-bottom: 10px
+    @media screen and ( max-width:767px  )
+        margin-bottom: 0px
+
+
+
+.slider-nav .slick-slide.slick-current.thumbnail-image .thumbImg 
+    border: 1px solid #02327B
+
+
+
+.product-item__slider-card
+    padding: 50px
+    padding-top: 0px
+    padding-bottom: 0px
+    background: #FFFFFF
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04)
+    border-radius: 4px
+    margin-bottom: 10px
+    @media screen and ( max-width: 1279px )
+        padding: 36px
+    @media screen and ( max-width: 767px)
+        padding-left: 0px
+        padding-right: 0px
+        box-shadow: none
+        background-color: unset
+        
+
+
+
+.product-item__card-about
+    padding-bottom: 50px
+    padding-top: 50px
+    padding-left: 36px
+    @media screen and ( max-width: 1279px )
+        padding-left: 0px
+        padding-bottom: 0px
+    @media screen and ( max-width: 767px )
+        padding-top: 0px
+        margin-top: 10px
+        background: #fff
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 20px
+        border-radius: 4px
+        padding-bottom: 20px
+        
+
+
+.product-tab-row
+    @media screen and ( max-width: 1279px )
+        display: none
+
+
+.product-item__title
+    font-size: 32px
+    margin-bottom: 15px
+
+.product-item__subtitle
+    font-size: 16px
+    margin-bottom: 30px
+
+.product-item__header
+    margin-bottom: 50px
+    @media screen and ( max-width:767px  )
+        text-align: center
+        margin-bottom: 30px
+        
+
+.product-item__types
+    margin-bottom: 40px
+    & .catalog-cargds__title
+        margin-bottom: 20px
+    & .catalog-cargds__title p 
+        font-size: 20px
+
+
+.char-container
+    & .catalog-cargds__title
+        margin-bottom: 20px
+    & .catalog-cargds__title p 
+        font-size: 20px
+
+.products-expamples
+    display: flex
+
+
+.product-expamples__item
+    height: 90px
+    width: 90px
+    margin-right: 18px
+    padding: 5px
+    border: 1px solid #F2F2F2
+    border-radius: 4px
+    text-align: center
+    @media screen and ( max-width: 1279px )
+        width: 25%
+        height: 142px
+        display: flex
+        justify-content: center
+        align-items: center
+    &:last-child
+        margin-right: 0px
+    @media screen and ( max-width: 767px )
+        height: auto
+
+.char
+    position: relative
+
+
+
+
+.product-mobile-btn-container
+    @media screen and ( max-width:  1279px)
+        display: flex
+        justify-content: center
+        margin-top: 40px
+        
+
+.char-item 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    color: #000
+
+
+.characteristics .char-item-label 
+    font-size: 20px
+    white-space: nowrap
+
+
+.separator-dashed
+    height: 1px
+    border: 1px dashed #E8E8E8
+    margin-left: 10px
+    margin-right: 10px
+    flex-grow: 1
+    min-width: 5px
+
+
+.char-list .char-item-label:last-child 
+    text-align: right
+
+
+.product-tabs__btns .tab-header 
+    display: flex
+    border-bottom: 1px solid #E8E8E8
+    margin-bottom: 50px
+
+.product-tabs
+    background: #FFFFFF
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04)
+    border-radius: 4px
+    padding: 50px
+    margin-bottom: 180px
+    @media screen and ( max-width:1279px)
+        padding: 0px
+        box-shadow: none
+    @media screen and ( max-width:1279px)
+        margin-bottom: 70px
+        
+
+.product-item-aside
+    @media screen and ( max-width: 1279px)
+        display: none
+        
+
+.tab-header
+    padding: 0
+    margin: 0
+    list-style: none
+
+.tab-header__item
+    font-size: 20px
+    margin-right: 64px
+    &:hover
+        cursor: pointer
+
+.accordion-lk .card 
+    margin-bottom: 20px
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04)
+    border-radius: 4px
+    @media screen and ( max-width:1279px)
+        margin-bottom: 10px
+        
+    & .btn-link
+        padding-left: 20px
+        padding-right: 20px
+        display: flex
+        align-items: center
+        border-radius: 4px
+        & p 
+            margin-bottom: 0px
+
+.accordion-lk .card .btn-link 
+    background: #022C6C
+    color: #fff
+
+.accordion-lk .card .collapsed 
+    background: #fff
+    color: #000
+
+.accordion-lk .card-header svg rect 
+    fill: #fff
+
+.accordion-lk .collapsed  svg rect 
+    fill: #B9B9B9
+
+
+
+
+
+.product-item__description-card
+    @media screen and ( max-width:1279px)
+        padding-left: 20px
+        padding-right: 20px
+        
+
+
+.product-tabs__btns .active 
+    color: #02327B
+    padding-bottom: 30px
+    border-bottom: 1px solid #02327B
+
+
+.tab-content-title
+    font-size: 24px
+    margin-bottom: 30px
+    font-weight: 500
+
+.slider-product-col
+    border-right: 1px solid #EFEFEF
+    @media screen and ( max-width: 1279px )
+        border: none
+
+.js-tab-content 
+    display: none
+
+.tab-content__item.active 
+    display: block
+
+
+
+.porduct-accordion
+    display: none
+    @media screen and ( max-width:1279px)
+        display: block
+        
+
+
+.product-item-desc-tab p
+    margin-bottom: 20px
+    font-size: 16px
+
+.tab-text-content
+    margin-bottom: 50px
+    position: relative
+
+
+.video-modal video 
+    margin-top: 0px
+    object-fit: cover
+    width: 100%
+    border-radius: 10px
+    max-height: 738px
+
+.video-play 
+    width: 100px
+    height: 100px
+    background: #fff
+    border-radius: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.main-video
+    max-width: 100%
+    border-radius: 4px
+    width: 100%
+
+
+.hide-video-btn 
+    visibility: hidden
+
+.scroll-line 
+    display: flex
+    justify-content: center
+    overflow: hidden
+
+.js-marquee
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+
+.hidden-mobile
+    @media screen and ( max-width: 767px )
+        display: none
+
+
+.show
+    display: block
+        
+
+.btn-showmore-container
+    display: none
+    @media screen and ( max-width: 767px )
+        display: block
+
+.btn-showmore
+    display: none
+    margin: 0 auto
+    width: 100%
+    @media screen and ( max-width: 767px )
+        display: block
+
+
+.product-item-main
+    background-color: #FBFBFB
+    padding-top: 120px
+    & .inner-breadcrumbs 
+        margin-top: 0px
+
+
+.delivery-btn__date-summ 
+    display: flex
+    align-items: center
+
+.delivery-summ
+    margin-right: 70px
+    font-size: 22px
+    @media screen and ( max-width:767px  )
+        display: none
+
+.delivery-btn__title-n-icon
+    font-size: 22px
+    @media screen and ( max-width:767px  )
+        font-size: 16px
+        
+
+
+.vacancy .card-body
+    padding-left: 30px
+    padding-right: 30px
+    padding-bottom: 50px
+
+.vacancy-section
+    margin-bottom: 40px
+
+
+.vacancy-title
+    font-size: 20px
+    margin-bottom: 15px
+    font-weight: 500
+    @media screen and ( max-width:767px)
+        font-size: 18px
+
+.vacancy-text
+    font-size: 16px
+    max-width: 943px
+    @media screen and ( max-width:767px)
+        font-size: 14px
+
+.vacancy-li
+    margin-bottom: 10px
+    @media screen and ( max-width:767px)
+        font-size: 14px
+
+.vacancy-accrodion  .card .btn-link 
+    padding-left: 30px
+    padding-right: 30px
+    @media screen and ( max-width:1279px)
+      padding-left: 20px
+      padding-right: 20px
+        
+
+
+.service-no-slider
+    min-height: 500px
+    margin-bottom: 70px
+    background-image: url('../assets/images/service-header.png')
+    & .slide-text
+        margin: 0 auto
+        text-align: center
+    & .slide-subtitle
+        margin: 0 auto
+        max-width: 800px
+
+.about-service__text
+    max-width: 1141px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    & p 
+        margin-bottom: 30px
+        font-size: 18px
+        @media screen and ( max-width: 767px )
+            font-size: 16px
+    & .btn
+        margin-top: 20px
+        @media screen and ( max-width: 767px )
+            width: 100%
+
+
+.contacts-section
+    & .tools__title-container
+        display: flex
+        align-items: center
+        flex-direction: column
+    & .tools__subtitle
+        max-width: 825px
+        margin-bottom: 50px
+        @media screen and ( max-width: 767px)
+            margin-bottom: 30px
+    @media screen and ( max-width: 767px)
+        & .btn
+            width: 100%
+
+
+.contacts-section__info
+    padding-top: 70px
+    padding-bottom: 70px
+    border-top: 1px solid #EFEFEF
+    border-bottom: 1px solid #EFEFEF
+    @media screen and ( max-width: 767px)
+        padding-top: 30px
+        padding-bottom: 30px
+        
+
+.contact-row
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+
+.contact-col
+    max-width: 355px
+    @media screen and ( max-width: 1279px)
+        max-width: 100%
+        flex: 0 0 100%
+        margin-bottom: 40px
+        @media screen and ( max-width: 767px)
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0px
+
+
+.page-title
+    font-size: 72px
+    @media screen and ( max-width: 1279px)
+        font-size: 48px
+    @media screen and ( max-width: 767px)
+        font-size: 32px
+
+.page-subtitle
+    font-size: 20px
+    @media screen and ( max-width: 1279px)
+        font-size: 18px
+    @media screen and ( max-width: 767px)
+        font-size: 16px
+        
+
+.contact-col__label
+    margin-bottom: 15px
+    opacity: 0.6
+    @media screen and ( max-width: 767px)
+        font-size: 14px
+
+.contact-col__info
+    font-size: 24px
+    @media screen and ( max-width: 767px)
+        font-size: 18px
+    & a 
+        color: #000
+    & .footer-contacts__item
+        display: flex
+        margin-right: 0px
+        align-items: center
+    & .footer-contacts__label
+        margin-bottom: 0px
+        margin-left: 5px
+        font-size: 24px
+        @media screen and ( max-width: 767px)
+          font-size: 18px
+    & .footer-contacts__link
+        font-size: 24px
+        @media screen and ( max-width: 767px)
+          font-size: 18px
+
+
+
+#map 
+    padding-left: 15px
+    padding-right: 15px
+    border-radius: 6px
+    height: 660px
+    width: 100%
+    @media screen and ( max-width: 767px)
+        height: 320px
+
+
+.map-section
+    & .tools__subtitle
+        max-width: 825px
+
+[class*=ymaps-2][class*=-ground-pane]
+  filter: url("data:image/svg+xmlutf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale")
+  -webkit-filter: grayscale(100%)
+
+.card-select-round
+    position: absolute
+    width: 46px
+    height: 46px
+    border-radius: 46px
+    top: 30px
+    left: 30px
+    background-image: url('../assets//images/check.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-color: #02327B
+    background-size: 17px
+    opacity: 0
+    transition: 0.2s
+    @media screen and ( max-width: 767px)
+        width: 30px
+        height: 30px
+        border-radius: 30px
+        background-size: 10px
+        
+
+
+   
+
+
+.tools-card:hover .card-select-round
+    opacity: 1
+    transition: 0.2s
+
+
+.aside-menu-choice-link
+    font-size: 16px
+    padding: 20px
+    display: block
+    width: 100%
+    color: #1b1b1b
+    text-decoration: none
+    transition: 0.2s
+    border-radius: 4px
+    &:hover
+        transition: 0.2s
+        background: #02327B
+        border-radius: 4px
+        color: #fff
+
+
+.aside-menu-choice
+    margin-top: 0px
+    padding: 0px
+    @media screen and ( max-width: 997px  )
+        display: none
+    
+
+
+
+.choice-card .tools-card__title
+    text-align: center
+    font-size: 24px
+    margin-bottom: 10px
+    @media screen and ( max-width: 767px  )
+        font-size: 20px
+
+.choice-section-row .col-lg-4
+    margin-bottom: 20px
+
+.choice-accordion
+    display: none
+    @media screen and ( max-width: 997px  )
+        display: block
+
+
+
+
+.section
+    margin-bottom: 150px
+    @media screen and ( max-width: 1279px  )
+      margin-bottom: 100px
+    @media screen and ( max-width: 767px  )
+        margin-bottom: 70px
+
+
+.title-size 
+    @media screen and ( max-width: 1279px )
+        font-size: 46px
+    @media screen and ( max-width: 767px )
+        font-size: 28px
+
+.container
+    @media screen and ( min-width: 1600px  )
+        max-width: 1744px
+    
+        
