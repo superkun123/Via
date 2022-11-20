@@ -1,3 +1,3 @@
-# Via
-Вёрстка сайта via.ru
+# Viya
+Вёрстка сайта viya.ru
 Реализована на связке html + sass + vanilla.js
